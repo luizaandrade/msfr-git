@@ -20,23 +20,18 @@
 				<section data-markdown>
 					<textarea data-template>						
 						## Housekeeping
-						- Check that you have access to the repository we will use today: https://github.com/DevInnovationLab/git-training
+						- Check that you have access to the repository we will use today: https://github.com/luizaandrade/msfr-git
 						- If you don't:
 						  - Share your GitHub handle with Luiza
-						  - Go to [https://github.com/DevInnovationLab](https://github.com/DevInnovationLab) to accept the invitation to join the organization
+						  - Go to [https://github.com/luizaandrade/msfr-git](https://github.com/luizaandrade/msfr-git) to accept the invitation to join the organization
 					</textarea>
 				</section>
 
 				<section data-markdown>
-					<textarea data-template >
-						
-						<div id="left">
-							<img src="img/DIL_logo_safespace_RGBFull Color.svg" alt="DIL logo" width="400">
-						</div>
-												
+					<textarea data-template>						
 						# GitHub pull requests
-						February 15, 2023
-
+						
+						May 8, 2023	
 					</textarea>
 				</section>
 
@@ -50,7 +45,7 @@
 
 						<ul>
 							<li>GitHub is a powerful tool to <b>track changes</b> and <b>collaborate</b> on <b>code</b></li>
-							<li class = "fragment fade-in">Last week, we learned how to use <b>git</b> to <b>track changes</b></li>
+							<li class = "fragment fade-in">In the last session, we learned how to use <b>git</b> to <b>track changes</b></li>
 							<ul class = "fragment fade-in">
 								<li>Commit changes</li>
 								<li>Pull from and push to the cloud</li>
@@ -140,6 +135,36 @@
 				</section>
 
 				<section data-background="#80001E">
+					<h2>Issues</h2>
+				</section>
+
+				<section data-markdown data-separator-notes="^Note:">
+					<textarea data-template>
+						## GitHub Issues
+
+						Issues are a space to 
+						- Suggest changes to the code
+						- Have discussions on how the code should be edited, creating documentation
+						- Track the progress of a task
+						---
+						## Opening an issue
+
+						1. On the landing page of the repository, click on `Issues` on the main nevigation bar
+						1. Click on the green button called `New Issue`
+						1. Describe your suggestions
+						1. Assign someone to complete this task
+						---
+						## Responding to an issue
+
+						1. Create a new branch called `issue-##`, where `##` is the number of the issue you were assigned to
+						1. Open this branch in your local repo
+						1. Make the changes suggested in the issue
+						1. Commit your changes
+						1. Push your changes to the cloud
+					</textarea>
+				</section>
+
+				<section data-background="#80001E">
 					<h2>Pull requests (PRs)</h2>
 				</section>
 
@@ -148,11 +173,11 @@
 						## Opening a pull request (author)
 
 						1. On the browser, click on Pull requests > New pull request
-						1. Select your feature (`develop`) branch as the `compare` branch and `develop` (`main`) and the base branch
+						1. Select your the branch `issue-##` (`develop`) as the `compare` branch and `develop` (`main`) and the base branch
 						1. Review your changes
 						1. Give a self-explanatory title to your pull request
-						1. Write a longer description of the changes made (if there are a lot of them) and why they are important
-						1. Add a reviewer to the pull request
+						1. Write a longer description of the changes made (if there are a lot of them) and why they are important (try "Solve issue #[number of the issue]")
+						1. Mark the person that created the issue as a reviewer to the pull request
 						1. Create the pull request
 						---
 						## Reviewing a pull request (reviewer)
@@ -188,37 +213,6 @@
 						if there are open conversations, repeat the cycle
 					</textarea>
 				</section>
-
-				<section data-background="#faa319">
-                    <h2>
-                        <span class="white">
-                            Let's try this!
-                        </span>
-                    </h2>
-				</section>
-
-				<section data-markdown data-separator-notes="^Note:">
-					<textarea data-template>
-						## Practice
-
-						<ol class = "small">
-							<li>Open a pull request</li>
-							<ul>
-								<li>Go to <a href="https://github.com/DevInnovationLab/git-training/issues">https://github.com/DevInnovationLab/git-training/issues</a></li>
-								<li>Choose an issue to fix and assign it to yourself</li>
-								<li>Create a new branch from <code>develop</code> and name it after the number of the issue you chose</li>
-								<li>In this new branch, fix whatever problem is described in the issue</li>
-								<li>When you are done, open a pull request and make the person to your left (or the next name in alphabetical order if you are joining online) a reviewer</li>
-							</ul>
-							<li>Review a pull request</li>
-							<ul>
-								<li>Use the pull request you were assigned to explore the pull request features we discussed</li>
-								<li>When you are happy with the changes, approve and merge the pull request</li>
-							</ul>
-						</ol>	
-					</textarea>
-				</section>
-
 			</div>
 		</div>
 
